@@ -4,6 +4,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     height: 100%;
@@ -11,18 +12,22 @@ body {
     color: #FFF;
     font-family: 'Montserrat', 'Roboto', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+
 ul,
 ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 p {
     margin: 1rem 0;
 }
+
 // ============= MAIN LAYOUT ==============
 .app {
     display: grid;
@@ -30,6 +35,7 @@ p {
     grid-template-columns: 20% 1fr;
     height: 100vh;
 }
+
 .header,
 .footer {
     font-size: .75rem;
@@ -38,6 +44,7 @@ p {
     letter-spacing: 1px;
     color: #a0a0a0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -45,11 +52,13 @@ p {
     padding: 0 2rem;
     border-bottom: 1px solid #a0a0a0;
 }
+
 .header__left,
 .header__right {
     display: flex;
     align-items: center;
 }
+
 .footer {
     display: flex;
     align-items: center;
@@ -57,18 +66,28 @@ p {
     padding: 0 2rem;
     border-top: 1px solid #a0a0a0;
 }
+
 p {
     margin-right: 1rem;
 }
+
 a {
     color: #FFF;
 }
+
 a:hover,
 a:focus {
     text-decoration: underline;
 }
+
 .footer__more {
     display: none;
     margin-left: auto;
     margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__more {
+        display: block;
+    }
 }
